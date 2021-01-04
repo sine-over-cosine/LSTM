@@ -13,7 +13,8 @@ typedef long double ld;
 typedef vector<vector<double> > vvd;
 typedef vector<vector<vector<double> > > vv3d;
 typedef map<string,vvd> msv;
-
+normal_distribution<long double> norm(0.0,1.0);
+default_random_engine re;
 
 vector<vector<double> > init_matrix(int size1, int size2){
     vector<vector<double> > matrix(size1);
