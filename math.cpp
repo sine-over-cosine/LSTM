@@ -168,3 +168,15 @@ vvd sum2D(vvd matrix, string axis){
     }
     return output;
 }
+
+void fill3Dwith2D(vv3d &tensor, vvd &matrix, int dims, int index){
+    //To be built in progress
+    assert(dims == 1 || dims == 2 || dims == 0);
+    if(dims == 2){
+        for(int i = 0 ; i < matrix.size(); i++){
+            for(int j = 0; j < matrix[0].size(); j++){
+                tensor[i][j][index]=matrix[i][j];
+            }
+        }
+    }
+}
